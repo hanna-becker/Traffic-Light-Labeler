@@ -11,16 +11,6 @@ IMG_DIR = 'images'
 LABELED_DATA_FILE = "labeled_data.csv"
 
 
-def state_mapper(state):
-    if state == "r":
-        return 0
-    if state == "y":
-        return 1
-    if state == "g":
-        return 2
-    return 3
-
-
 def labeling_loop():
     labeled_data_file = open(LABELED_DATA_FILE, "a")
     img_paths = Path(IMG_DIR).glob('**/*.jpg')
@@ -41,7 +31,7 @@ def labeling_loop():
         tl_state = get_user_input()
         if tl_state == "e":
             break
-        labeled_data_file.write("%s, %s\n" % (path, (state_mapper(tl_state))))
+        labeled_data_file.write("%s, %s\n" % (path, tl_state))
 
     labeled_data_file.close()
 
