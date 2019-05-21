@@ -16,8 +16,8 @@ def _get_char():
 
 def get_user_input():
     while True:
-        print("Select traffic light state: (r)ed, (y)ellow, (g)reen, (u)nknown, (e)xit: ")
+        print("Select traffic light state: (r)ed, (y)ellow, (g)reen, (u)nknown, (p)ause: ")
         state = _get_char().lower()
-        if state in ("r", "y", "g", "u", "e"):
+        if state in ("r", "y", "g", "u", "p"):
             return state
-        print("Please select a valid label!")
+        print("\nPlease select a valid input!\n")

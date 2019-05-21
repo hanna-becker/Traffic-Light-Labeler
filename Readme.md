@@ -13,3 +13,4 @@ A tool for labeling traffic light images for training neural networks.
 3. `python3 __main__.py`
 4. Follow instructions in terminal.
 5. You will be notified when all images are labeled.
+6. You can pause using _p_ any time you like. No need to re-label the images you already labeled in the next session.

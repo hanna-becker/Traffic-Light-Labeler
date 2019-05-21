@@ -33,11 +33,11 @@ def run():
         plt.pause(0.05)
 
         tl_state = get_user_input()
-        if tl_state == "e":
+        if tl_state == "p":
             break
         labeled_data_file.write("%s, %s\n" % (path, tl_state))
 
     labeled_data_file.close()
 
-    if tl_state != "e":
+    if tl_state != "p":
         _print_finish_msg()
