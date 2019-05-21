@@ -7,7 +7,7 @@ A tool for labeling traffic light images for training neural networks.
 2. `pip install -r requirements.txt `
 
 
-###Usage
+### Usage
 1. Replace example images in _images_ folder with the ones you would like to label.
 2. `python3 traffic-light-labeler/__main__.py`
 3. Follow instructions in terminal.
