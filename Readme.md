@@ -26,3 +26,6 @@ images/green.jpg, g
 images/yellow.jpg, y
 ```
 
+### License
+Traffic-Light-Labeler is Copyright © 2019 Hanna Becker. It is free software, and may be redistributed under the terms 
+specified in the LICENSE file.
