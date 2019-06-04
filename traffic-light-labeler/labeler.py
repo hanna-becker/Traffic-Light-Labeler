@@ -9,6 +9,7 @@ IMG_DIR = 'images'
 LABELED_DATA_FILE = "labeled_data.csv"
 IMAGE_WIDTH = 600
 IMAGE_HEIGHT = 1000
+IMG_FORMAT = 'png'
 
 
 def _print_finish_msg():
@@ -19,7 +20,7 @@ def _print_finish_msg():
 
 def run():
     labeled_data_file = open(LABELED_DATA_FILE, "a")
-    img_paths = Path(IMG_DIR).glob('**/*.png')
+    img_paths = Path(IMG_DIR).glob('**/*.' + IMG_FORMAT)
     tl_state = None
     plt.ion()
     plot = plt.imshow(np.zeros((IMAGE_HEIGHT, IMAGE_WIDTH)))
