@@ -7,8 +7,8 @@ from user_input import get_user_input
 
 IMG_DIR = 'images'
 LABELED_DATA_FILE = "labeled_data.csv"
-IMAGE_WIDTH = 600
-IMAGE_HEIGHT = 1000
+IMG_WIDTH = 600
+IMG_HEIGHT = 1000
 IMG_FORMAT = 'png'
 
 
@@ -23,7 +23,7 @@ def run():
     img_paths = Path(IMG_DIR).glob('**/*.' + IMG_FORMAT)
     tl_state = None
     plt.ion()
-    plot = plt.imshow(np.zeros((IMAGE_HEIGHT, IMAGE_WIDTH)))
+    plot = plt.imshow(np.zeros((IMG_HEIGHT, IMG_WIDTH)))
     for img_path in img_paths:
         path = str(img_path)
 
